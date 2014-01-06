@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Flexslider Example</title>
+		<link href="css/reset.css" rel="stylesheet">
+		<!-- Place the flexslider css before our own stylesheet, 
+		but after the reset -->
+		<link rel="stylesheet" href="flexslider/flexslider.css" type="text/css">
+		<link href="css/general.css" rel="stylesheet">
+		<meta name="handheldfriendly" content="true">
+		<meta name="mobileoptimized" content="240">
+		<meta name="viewport" content="width=device-width,initial-scale=1" >
+	</head>
+
+	<body>
+	
+	<!-- Flexslider starts -->
+				<div class="flexslider">
+					<ul class="slides">
+   						 <li>
+     						 <img src="http://placekitten.com/900/400" alt="A cute kitten">
+    					</li>
+    					<li>
+      						<img src="http://placekitten.com/950/425" alt="An adorable kitten">
+							<p class="flex-captopn"> This is an amazing kitten </p>
+    					</li>
+    					<li>
+     						 <img src="http://placekitten.com/850/400" alt="A soft kitty">
+    					</li>
+  					</ul>
+				</div>
+	<!-- Flexslider Ends -->
+
+	<!-- Import the JQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<!-- Import the flexslider plugin -->
+	<script src="flexslider/jquery.flexslider-min.js"></script>
+	<!-- Trigger the Flexslider -->
+	<script type="text/javascript" charset="utf-8">
+	  $(window).load(function() {
+		$('.flexslider').flexslider({
+			smoothHeight: true,
+			animation: "fade",
+			});
+	  });
+	</script>
+	</body>
+</html>
